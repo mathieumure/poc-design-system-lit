@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap');
+
+:root {
+    --blue-200: #F6F6FE;
+    --blue-300: #DADDFC;
+    --blue-400: #4D59EF;
+    --blue-500: #1423DC;
+    --blue-600: #0F1AA4;
+    --neutral-50: #FFFFFF;
+    --neutral-600: #868A93;
+}
+
+button:hover {
+    background-color: green;
+}

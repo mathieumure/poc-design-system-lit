@@ -1,0 +1,7 @@
+<h1>{{ name }} has {{ count }} click</h1>
+<dsy-input type="text" [value]="name" (input)="handleInput($event)"></dsy-input>
+<dsy-input type="text" ngDefaultControl [(ngModel)]="name"></dsy-input>
+<div>
+  <dsy-button (click)="increaseCounter()">Click me</dsy-button>
+  <dsy-button level="secondary" (click)="increaseCounter()">Click me otherwise</dsy-button>
+</div>

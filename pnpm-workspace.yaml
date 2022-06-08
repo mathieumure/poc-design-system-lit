@@ -1,0 +1,5 @@
+packages:
+  - 'packages/components/**'
+  - 'packages/sample/**'
+  - 'packages/base'
+  - 'packages/storybook'

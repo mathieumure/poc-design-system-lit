@@ -1,0 +1,25 @@
+{
+  "name": "@dsy/button",
+  "version": "0.0.1",
+  "main": "dist/dsy-button.es.js",
+  "exports": {
+    ".": "./dist/dsy-button.es.js"
+  },
+  "types": "types/dsy-button.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "watch": "tsc && vite build --watch"
+  },
+  "dependencies": {
+    "lit": "^2.0.2"
+  },
+  "devDependencies": {
+    "vite": "^2.9.9",
+    "typescript": "^4.5.4"
+  }
+}

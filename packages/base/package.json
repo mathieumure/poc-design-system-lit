@@ -1,0 +1,10 @@
+{
+  "name": "@dsy/base",
+  "version": "0.0.1",
+  "description": "",
+  "main": "base.css",
+  "files": ["base.css"],
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

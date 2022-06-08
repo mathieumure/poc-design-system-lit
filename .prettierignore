@@ -1,0 +1,7 @@
+dist
+**/node_modules/
+storybook-static
+packages/site-gips/dist
+packages/site-gips/dist-ssr
+.pnpm-store
+lerna.json
