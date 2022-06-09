@@ -7,7 +7,6 @@ import { LitElement } from 'lit';
  */
 export declare class DsyButton extends LitElement {
     level: 'primary' | 'secondary' | 'tertiary';
-    disabled: boolean;
     static styles: import("lit").CSSResult;
     render(): import("lit").TemplateResult<1>;
 }

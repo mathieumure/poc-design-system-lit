@@ -1,0 +1,128 @@
+import { Story, Source } from "@storybook/addon-docs";
+import dedent from 'ts-dedent';
+
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+
+
+# DSY Button
+
+## Getting started
+
+```sh
+npm install @dsy/button;
+```
+
+### Angular
+
+**angular.json**
+
+```json
+{
+  "projects": {
+    "angular-app": {
+      "architect": {
+        "build": {
+          "options": {
+            "styles" : [
+              "@dsy/base/base.css"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+**app.module.ts**
+
+```ts
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule],
+  providers: [],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+})
+export class AppModule {}
+
+```
+
+**app.component.ts**
+```ts
+import { Component } from '@angular/core';
+
+import '@dsy/base/base.css';
+import '@dsy/button';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  handleClick() {
+    // TODO
+  }
+}
+
+```
+
+**app.component.html**
+```html
+<dsy-button level="secondary" (click)="handleClick()">Click me otherwise</dsy-button>
+```
+
+### React
+
+```jsx
+import '@dsy/base/base.css';
+import '@dsy/button';
+
+export const MyComponent = () => {
+  const handleClick = () => {};
+
+  return <dsy-button level="secondary" onClick={handleClick}>Click me</dsy-button>
+}
+```
+### Vue
+
+```html
+<script setup lang="ts">
+import '@dsy/base/base.css';
+import '@dsy/button';
+
+const handleClick = () => {
+};
+</script>
+
+<template>
+	<dsy-button level="secondary" @click="handleClick">Click me</dsy-button>
+</template>
+```
+
+## Level
+
+Button is the primary component. It has three possible levels.
+
+- Primary
+- Secondary
+- Tertiary
+
+## Primary
+
+<Story id="button--primary"  />
+
+## Secondary
+
+<Story id="button--secondary" />
+
+## Tertiary
+
+<Story id="button--tertiary" />
+

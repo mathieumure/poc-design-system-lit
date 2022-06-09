@@ -8,6 +8,7 @@ export declare class DsyInput extends LitElement {
     inputElement: HTMLInputElement;
     type: string;
     value: string;
+    protected handleInput(e: InputEvent): void;
     render(): import("lit").TemplateResult<1>;
 }
 declare global {
