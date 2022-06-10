@@ -13,13 +13,20 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "watch": "tsc && vite build --watch"
+    "watch": "tsc && vite build --watch",
+    "test": "vitest"
   },
   "dependencies": {
     "lit": "^2.0.2"
   },
   "devDependencies": {
+    "@testing-library/dom": "^8.13.0",
+    "@testing-library/user-event": "^14.2.0",
+    "happy-dom": "^5.2.0",
+    "jsdom": "^19.0.0",
+    "testing-library__dom": "^7.29.4-beta.1",
+    "typescript": "^4.5.4",
     "vite": "^2.9.9",
-    "typescript": "^4.5.4"
+    "vitest": "^0.14.1"
   }
 }

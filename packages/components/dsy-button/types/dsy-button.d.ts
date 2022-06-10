@@ -6,12 +6,12 @@ import { LitElement } from 'lit';
  * @csspart button - The button
  */
 export declare class DsyButton extends LitElement {
-    level: 'primary' | 'secondary' | 'tertiary';
-    static styles: import("lit").CSSResult;
-    render(): import("lit").TemplateResult<1>;
+  level: 'primary' | 'secondary' | 'tertiary';
+  static styles: import('lit').CSSResult;
+  render(): import('lit').TemplateResult<1>;
 }
 declare global {
-    interface HTMLElementTagNameMap {
-        'dsy-button': DsyButton;
-    }
+  interface HTMLElementTagNameMap {
+    'dsy-button': DsyButton;
+  }
 }

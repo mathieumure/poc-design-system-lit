@@ -1,6 +1,9 @@
 import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
+// eslint-disable-next-line @typescript-eslint/no-empty-function
+const noop = () => {};
+
 @Directive({
   selector: 'dsy-input',
   providers: [
@@ -13,8 +16,8 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 })
 export class DsyInputValueAccessorDirective implements ControlValueAccessor {
   constructor(private element: ElementRef, private renderer: Renderer2) {
-    this.onChange = () => {};
-    this.onTouched = () => {};
+    this.onChange = noop;
+    this.onTouched = noop;
   }
 
   onChange: (value: string) => void;
@@ -30,7 +33,7 @@ export class DsyInputValueAccessorDirective implements ControlValueAccessor {
   }
 
   @HostListener('onBlur', ['$event.target'])
-  _handleBlurEvent(el: any) {
+  _handleBlurEvent() {
     this.onTouched();
   }
 

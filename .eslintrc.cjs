@@ -2,6 +2,11 @@ const { defineConfig } = require('eslint-define-config');
 
 module.exports = defineConfig({
   root: true,
+  env: {
+    browser: true,
+    jest: true,
+    node: true,
+  },
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: '@typescript-eslint/parser',
